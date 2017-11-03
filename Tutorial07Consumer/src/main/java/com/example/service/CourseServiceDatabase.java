@@ -22,7 +22,8 @@ public class CourseServiceDatabase implements CourseService{
 
 	@Override
 	public List<CourseModel> selectAllCourse() {
-		return courseMapper.selectAllCourse();
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

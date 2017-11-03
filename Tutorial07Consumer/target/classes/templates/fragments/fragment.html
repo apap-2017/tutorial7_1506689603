@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="header">
+
+<title th:text="${title}">Title</title>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css"
+	href="../DataTables/datatables.css">
+
+</head>
+<body>
+	<div th:fragment="navigation-bar">
+		<!-- Navigation bar -->
+		<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+			<a class="navbar-brand" href="/">Tutorial 7</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active"><a class="nav-link" href="/">Home
+							<span class="sr-only">(current)</span>
+					</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="/student/viewall">Daftar Mahasiswa</a></li>
+					<li class="nav-item"><a class="nav-link" href="/student/add">Menambah
+							Mahasiswa</a></li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="text"
+						placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+	</div>
+	<div th:fragment="footer">
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="/js/jquery-3.2.1.min.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+			integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+			crossorigin="anonymous"></script>
+		<script src="/js/bootstrap.min.js"></script>
+		<hr>
+		<h4>Mata kuliah APAP</h4>
+	</div>
+</body>
+</html>
